@@ -4,7 +4,7 @@ const http = require('http')
 http.createServer((req, res) => {
     if (req.url === '/') {
         res.writeHead(200, { 'Content-Type': 'text/html' })
-        res.write("Hello")
+        res.write("Hello Mark!")
         res.end()
     } else if (req.url === '/users') { //http://localhost:5000/users
         res.writeHead(200, { 'Content-Type': 'text/html' })
